@@ -2,6 +2,8 @@
 // load the things we need
 var express = require('express');
 var app = express();
+var prettyjson = require('prettyjson');
+
 var request_data = require('./request_data.js');
 
 var request_aboutme = require('./request_aboutme');
@@ -38,7 +40,7 @@ app.get('/aboutme', function(req, res) {
     request_aboutme(req.query.q)
     	.then(function(data){
 
-    			res.send(JSON.stringify(data),null,4);
+    			res.send(JSON.stringify(data,null,4));
     	}).catch(function(error){
     		res.send(error);
     	});
