@@ -6,7 +6,7 @@ var request_data = require('./request_data.js');
 
 var request_aboutme = require('./request_aboutme');
 
-var PORT = process.env.port || 3000;
+var PORT = process.env.PORT || 3000;
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
