@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>POSTS</title>
+   <% include ../partials/head %>
+</head>
+<body class="container">
+
+    <header>
+        <% include ../partials/header %>
+    </header>
+    <main>
+        <ol>
+            <div class="jumbotron" >
+                <% notes.forEach(function(note) { %>
+                    <div class = "title"  ><%= note.title %> </div>
+                    <div class = "desc" ><%= note.body %></div>
+                <% }); %>
+            </div>
+        </ol>
+    </main>
+
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+
+</body>
+
+
+</html>
