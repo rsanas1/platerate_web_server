@@ -28,7 +28,7 @@ app.get('/post',function(req,res){
 
 //index page
 app.get('/', function(req, res) {
-    
+    res.send('Home Page');
 });
 
 // aboutme page 
