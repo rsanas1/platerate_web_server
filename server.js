@@ -38,7 +38,7 @@ app.get('/aboutme', function(req, res) {
     request_aboutme(req.query.q)
     	.then(function(data){
 
-    			res.send(data);
+    			res.send(JSON.stringify(data),null,4);
     	}).catch(function(error){
     		res.send(error);
     	});
