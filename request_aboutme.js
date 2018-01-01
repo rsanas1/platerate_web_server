@@ -49,7 +49,7 @@ module.exports = function(option){
 					resolve(data.hobbies);
 					break;
 				default:
-					reject('Invalid Query');
+					reject('Not Found');
 
 			}
 		}
