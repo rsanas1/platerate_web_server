@@ -30,7 +30,7 @@ app.get('/post',function(req,res){
 //index page
 app.get('/', function(req, res) {
     //res.send('Home Page');
-   res.render('pages/index');
+   res.render('pages/home');
 });
 
 // aboutme page 
