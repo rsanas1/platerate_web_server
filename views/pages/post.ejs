@@ -11,8 +11,13 @@
         <ol class="Center">
             <div >
                 <% notes.forEach(function(note) { %>
-                    <li class = "title"  ><%= note.title %> </li>
-                    <li class = "desc" ><%= note.body %></li>
+
+                    <li>
+                        <span class="title"><%= note.title %><br/></span>
+                        <span class="desc"><%= note.body %></span>  
+                    </li>
+
+                    
                 <% }); %>
             </div>
         </ol>
