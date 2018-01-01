@@ -4,22 +4,22 @@ var data = {
 
 	description:{
 		question:" Tell me a little bit about yourself?",
-		answer:" My name is Rishi Sanas "
+		answer:" I am an Android developer, and currently I try to keep myself updated about everything related to Android."
 	},
 
 	tech:{
 		question:"What excites you about technology?  ",
-		answer:"Consuming it " 
+		answer:"ways in which it can affect my life positively and negatively." 
 		},
 
 	techstack:{
 		question:"What is your preferred technology stack? ",
-		answer:" Mobile "
+		answer:" Android application development"
 	},
 
 	hobbies:{
 		question:"What are your favorite hobbies?",
-		answer:"Movies, Sports "
+		answer:"Watching movies, tech Channels and playing an sport"
 	}
 
 };
@@ -30,6 +30,7 @@ module.exports = function(option){
 		if(!option){
 
 			resolve(data);
+			//instead fetch data from datbase
 		}
 		else{
 
